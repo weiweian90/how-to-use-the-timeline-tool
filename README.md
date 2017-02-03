@@ -1,2 +1,3 @@
-# how-to-use-the-timeline-tool
-怎么使用chrome浏览器timeline
+## 怎么使用chrome浏览器的timeline做页面性能分析
+ * * *
+Timeline面板记录和分析了web应用运行时的所有活动情况，这是研究和查找性能问题的最佳途径。  
