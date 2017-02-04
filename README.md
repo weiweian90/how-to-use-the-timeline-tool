@@ -75,4 +75,73 @@ Timeline 栏由4个分栏组成
 **Timeline**可以在页面加载的时候捕获截图。这个功能叫做幻灯片（**Filmstrip**） 
 在你记录需要捕获页面截图之前需要在 **Controls**栏里面勾选 **Screenshots**复选框。 页面截图会显示在 **Overview**栏里面  
 
-![](./img/timeline-filmstrip.png)
+![](./img/timeline-filmstrip.png)  
+
+
+将你的鼠标放在 **Overview**栏的截图里面，会显示鼠标位置这个点的记录截图。左右移动鼠标可以查看不同点位记录的截图。  
+此处应有视频
+
+
+### Profile Javascript   
+***
+在开始一个记录之前勾选 **JS Profile** 复选框，确保在记录时能捕获javascript堆栈。然后火焰图会展示每个javascript函数  
+![](./img/js-profile.png)  
+
+
+
+### Profile painting  
+***
+
+在你开始记录之前勾选 **Paint**复选框可以获得更多的 **Paint**事件。 当页面绘制分析可用并且你点击了 **Paint**事件， 一个新的 **Paint Profiler**tab会展示在 **Details**栏里面，展示该事件更多的细节。  
+![](./img/paint-profiler.png)  
+
+
+
+### Rendering settings  
+
+打开DevTools主菜单选择 **More tools > Rendering settings** 通过渲染设置可能在调试渲染问题是有帮助。 **Rendering**在 Console旁边， （如果隐藏起来了，可以按 **esc**显示）  
+![](./img/rendering-settings.png)  
+
+
+
+### Search records  
+***
+当你想要关注某一类事件时，例如， 你想查看所有的 **Parse HTML **事件细节  
+
+在 **Timeline**获取焦点时按下快捷键 Cmd+f(Mac)或者Ctrl+f(Windows/Linux)，打开搜索框。 输入你想搜索的事件类型名称，例如 **Event**  
+
+工具栏只适用于当前选定的时间范围，任何在选定时间范围之外的事件都不会包含在搜索结果里。  
+
+向上向下的箭头会在搜索结构里面按时间顺序查找。 所以，第一个展示的是在选定时间范围里面最早的事件， 最后一个展示的是最后的数据。 每次你按下向上或者向下的箭头，一个新的事件就会被选择，所以，你可以在 **Detail**栏里查看选中事件的详细信息。 点击向上或者向下的箭头相当于在火焰图里面点中一个事件。  
+![](./img/find-toolbar.png)  
+
+
+
+
+###  Zoom in on a Timeline section
+***
+
+你可以缩放记录的区域让分析变得更简单。 你可以使用 **Overview**栏 缩放记录的某一部分， 缩放操作结束后， 火焰图会自动缩放到对应的部分。  
+![](./img/zoom.png)  
+
+缩放Timeline  
+
+    * 在 **Overview**栏，用鼠标选择拖动时间线选择
+    * 在表尺区域调动灰色滑块  
+    
+    
+  一旦你选择了一块区域， 你可以使用 W, A, S, D键调整你的选区。W，S是调整选区的大小， A, D是让选区左右移动.
+  
+  
+
+
+###  Save and recordings  
+***
+
+你可以在 **Overview** 或者 **Flame Chart**区域右击鼠标选择相关的选项保存或者打开记录。  
+![](./img/save-open.png)
+
+
+## 参考链接  
+[How to Use the Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3)  
+ 
