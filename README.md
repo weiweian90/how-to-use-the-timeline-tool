@@ -8,7 +8,7 @@ Timeline面板记录和分析了web应用运行时的所有活动情况，这是
 *  在一个页面加载后或者用户操作结束，开始一个timeline记录来分析每个发生的事件  
 *  在概述栏查看 FPS，CPU，network request  
 *  点击一个柱状里面的事件查看详细的信息  
-*  缩放记录的截面是分析更简单  
+*  缩放记录的截面使分析更简单  
 
 
 ### Timeline panel overview
